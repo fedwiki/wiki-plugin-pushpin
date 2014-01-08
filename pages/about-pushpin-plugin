@@ -23,7 +23,7 @@
     {
       "type": "paragraph",
       "id": "188a263d45929ccd",
-      "text": "See [https://github.com/WardCunningham/Smallest-Federated-Wiki/blob/master/client/plugins/pushpin GitHub] for plugin source."
+      "text": "See [https://github.com/fedwiki/wiki-plugin-pushpin GitHub] for plugin source."
     }
   ],
   "journal": [
@@ -294,6 +294,16 @@
         "text": "This has several advantages over clustering nearby datum into a single composite dot. [[More About Pushpin Plugin]]."
       },
       "date": 1365357930684
+    },
+    {
+      "type": "edit",
+      "id": "188a263d45929ccd",
+      "item": {
+        "type": "paragraph",
+        "id": "188a263d45929ccd",
+        "text": "See [https://github.com/fedwiki/wiki-plugin-pushpin GitHub] for plugin source."
+      },
+      "date": 1389182463972
     }
   ]
 }
