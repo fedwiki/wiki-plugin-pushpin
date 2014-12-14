@@ -32,11 +32,6 @@
       "type": "paragraph",
       "id": "186b61b5588e1dbc",
       "text": "• individual marks can be added or removed as datasets evolve over time."
-    },
-    {
-      "type": "paragraph",
-      "id": "9345bceac8399efb",
-      "text": "See [http://localhost/~wcunningham/emerge/d3/examples/factories/map.html Original Demo] on localhost/~wcunningham."
     }
   ],
   "journal": [
@@ -229,6 +224,12 @@
       ],
       "id": "d547a54d94880202",
       "date": 1365358412340
+    },
+    {
+      "type": "remove",
+      "id": "9345bceac8399efb",
+      "date": 1418502775361
     }
-  ]
+  ],
+  "plugin": "pushpin"
 }
