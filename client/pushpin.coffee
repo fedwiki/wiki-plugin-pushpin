@@ -1,4 +1,11 @@
-w = 426 
+###
+ * Federated Wiki : Activity Pushpin
+ *
+ * Licensed under the MIT license.
+ * https://github.com/fedwiki/wiki-plugin-pushpin/blob/master/LICENSE.txt
+###
+
+w = 426
 h = 300
 
 fy = "FY09"       # [ 'FY05', 'FY06', 'FY07', 'FY08', 'FY09' ]
