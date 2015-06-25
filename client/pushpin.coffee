@@ -106,15 +106,15 @@ window.plugins.pushpin =
     """
 
   bind: (div, item) ->
-    wiki.getScript '/js/d3/d3.js', ->
+    wiki.getScript '/js/d3/d3.min.js', ->
       vis = d3.select(div.get(0))
         .append("svg:svg")
         .attr("width", w)
         .attr("height", h)
-      wiki.getScript '/js/d3/d3.geo.js', ->
-        wiki.getScript '/js/d3/d3.geom.js', ->
-          wiki.getScript '/js/d3/d3.layout.js', ->
-            d3.json "/plugins/pushpin/world-countries.json", (collection) ->
-              d3.json "/plugins/pushpin/factories-locations.json", (locations) ->
-                d3.json "/plugins/pushpin/factories.json", (factories) ->
-                  display div, item, vis, collection, locations, factories
+    #  wiki.getScript '/js/d3/d3.geo.js', ->
+    #    wiki.getScript '/js/d3/d3.geom.js', ->
+    #      wiki.getScript '/js/d3/d3.layout.js', ->
+      d3.json "/plugins/pushpin/world-countries.json", (collection) ->
+        d3.json "/plugins/pushpin/factories-locations.json", (locations) ->
+          d3.json "/plugins/pushpin/factories.json", (factories) ->
+            display div, item, vis, collection, locations, factories
