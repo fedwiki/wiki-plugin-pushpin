@@ -16,7 +16,7 @@ bu = "APRL"       # [ 'EQUIP', 'FTWR', 'APRL', '_NA' ]s
 display = (div, item, vis, collection, locations, factories) ->
 
   # Use a map projection to scale lat/lng data
-  xy = d3.geo.mercator().scale(2500).translate([-600, 350])
+  xy = d3.geo.mercator().scale(350).translate([-550, 300])
   path = d3.geo.path().projection(xy)
   fill = d3.scale.category20()
 
