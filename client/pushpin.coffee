@@ -16,7 +16,7 @@ bu = "APRL"       # [ 'EQUIP', 'FTWR', 'APRL', '_NA' ]s
 display = (div, item, vis, collection, locations, factories) ->
 
   # Use a map projection to scale lat/lng data
-  xy = d3.geo.mercator().scale(2500).translate([-600, 350])
+  xy = d3.geo.mercator().scale(350).translate([-550, 300])
   path = d3.geo.path().projection(xy)
   fill = d3.scale.category20()
 
@@ -106,15 +106,15 @@ window.plugins.pushpin =
     """
 
   bind: (div, item) ->
-    wiki.getScript '/js/d3/d3.js', ->
+    wiki.getScript '/js/d3/d3.min.js', ->
       vis = d3.select(div.get(0))
         .append("svg:svg")
         .attr("width", w)
         .attr("height", h)
-      wiki.getScript '/js/d3/d3.geo.js', ->
-        wiki.getScript '/js/d3/d3.geom.js', ->
-          wiki.getScript '/js/d3/d3.layout.js', ->
-            d3.json "/plugins/pushpin/world-countries.json", (collection) ->
-              d3.json "/plugins/pushpin/factories-locations.json", (locations) ->
-                d3.json "/plugins/pushpin/factories.json", (factories) ->
-                  display div, item, vis, collection, locations, factories
+    #  wiki.getScript '/js/d3/d3.geo.js', ->
+    #    wiki.getScript '/js/d3/d3.geom.js', ->
+    #      wiki.getScript '/js/d3/d3.layout.js', ->
+      d3.json "/plugins/pushpin/world-countries.json", (collection) ->
+        d3.json "/plugins/pushpin/factories-locations.json", (locations) ->
+          d3.json "/plugins/pushpin/factories.json", (factories) ->
+            display div, item, vis, collection, locations, factories
