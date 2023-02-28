@@ -63,7 +63,7 @@ const display = (d3, div, item, vis, collection, locations, factories) => {
     .append('circle')
       .classed('node', true)
       .attr('r', 3)
-      .style('fill', (d, i) => fill[((Object.keys(countries).indexOf(d.country)) % 10)])
+      .style('fill', (d, i) => d3.rgb(fill[((Object.keys(countries).indexOf(d.country)) % 10)]).darker(Math.random()) )
 
   function ticked () {
     node
