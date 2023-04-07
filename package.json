@@ -1,6 +1,6 @@
 {
   "name": "wiki-plugin-pushpin",
-  "version": "0.3.2",
+  "version": "0.4.0-rc.0",
   "description": "Federated Wiki - Push Pin Plug-in",
   "keywords": [
     "wiki",
