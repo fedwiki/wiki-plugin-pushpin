@@ -5,6 +5,8 @@
  * https://github.com/fedwiki/wiki-plugin-pushpin/blob/master/LICENSE.txt
  */
 
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
+
 const width = 426
 const height = 300
 
@@ -73,7 +75,6 @@ const display = (d3, div, item, vis, collection, locations, factories) => {
 }
 
 async function emit (div, item) {
-  const d3 = await import('https://cdn.jsdelivr.net/npm/d3@7/+esm')
 
   div.append(`
     <style type='text/css'>
